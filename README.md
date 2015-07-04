@@ -1,41 +1,53 @@
-# Dandelionapi
+# [![Ruby Gem Icon](https://raw.githubusercontent.com/zenkay/dandelionapi-ruby/master/rubygem.png)](https://rubygems.org/gems/dandelionapi) Dandelion API Ruby Gem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dandelionapi`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[![Code Climate](https://codeclimate.com/github/zenkay/dandelionapi-ruby/badges/gpa.svg)](https://codeclimate.com/github/zenkay/dandelionapi-ruby) [![Travis CI](https://travis-ci.org/zenkay/dandelionapi-ruby.svg?branch=master)](https://travis-ci.org/zenkay/dandelionapi-ruby) [![Gem Version](https://badge.fury.io/rb/dandelionapi.svg)](http://badge.fury.io/rb/dandelionapi) [![Coverage Status](https://coveralls.io/repos/zenkay/dandelionapi-ruby/badge.png?branch=master)](https://coveralls.io/r/zenkay/dandelionapi-ruby?branch=master)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
+```
 gem 'dandelionapi'
 ```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle install
+```
+## Setup
 
-Or install it yourself as:
+Setup configuration parameters
 
-    $ gem install dandelionapi
+```
+Dandelionapi.configure do |c|
+  c.app_id = "your-app-id-for-dandelionapi-account"
+  c.app_key = "your-app-key-for-dandelionapi-account"
+  c.endpoint = "https://api.dandelion.eu/"
+end
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+_Methods references are taken from [Dandelion API's documentation](https://dandelion.eu/docs/)._
 
-## Development
+**Entity Extraction API**: is a named entity extraction & linking API that performs very well even on short texts, on which many other similar services do not. dataTXT-NEX currently works on English, French, German, Italian and Portuguese texts. With this API you will be able to automatically tag your texts, extracting Wikipedia entities and enriching your data.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```
+element = Dandelionapi::EntityExtraction.new
+response = element.analyze(text: "This is a test")
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+**Text Similarity API**: is a semantic sentence similarity API optimized on short sentences. With this API you will be able to compare two sentences and get a score of their semantic similarity. It works even if the two sentences don't have any word in common.
 
-## Contributing
+```
+element = Dandelionapi::TextSimilarity.new
+response = element.analyze(text1: "This is a test", text2: "This is another test")
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dandelionapi. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+**Language Detection API**: is a simple language identification API; it is a tool that may be useful when dealing with texts, so we decided to open it to all our users. It currently supports more than 50 languages.
 
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+```
+element = Dandelionapi::LanguageDetection.new
+response = element.analyze(text: "Questo è un test")
+```

@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/nex/v1
+    body:
+      encoding: UTF-8
+      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&text=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre+mio+padre+di+spalle+sul+piatto+si+mangia+la+vita+e+poi+sulla+pista+da+ballo+fa+un+valzer+dentro+il+suo+nuovo+vestito++Per+sempre+solo+per+sempre+cosa+sar%C3%A0+mai+porvarvi+dentro+solo+tutto+il+tempo+per+sempre+solo+per+sempre+c%27%C3%A8+un+istante+che+rimane+l%C3%AC+piantato+eternamente+E+lei+che+non+si+lascia+afferrare+si+piega+indietro+e+ride+e+lei+che+dice+quanto+mi+ama+e+io+che+mi+fido+e+lei+che+mi+toccava+per+prima+la+sua+mano+bambina+vuole+che+le+giuri+qualcosa+le+si+gonfia+una+vena+e+lei+che+era+troppo+pi%C3%B9+forte+sicura+di+tutto+e+prima+di+andarsene+mi+d%C3%A0+il+profilo+con+un+movimento+perfetto+Per+sempre+solo+per+sempre+cosa+sar%C3%A0+mai+portarvi+dentro+solo+tutto+il+tempo+per+sempre+solo+per+sempre+c%27%C3%A8+un+istante+che+rimane+l%C3%AC+piantato+eternamente+per+sempre+solo+per+sempre+Mia+madre+che+prepara+la+cena+cantando+sanremo+carezza+la+testa+a+mio+padre+gli+dice+vedrai+che+ce+la+faremo+Per+sempre+solo+per+sempre+cosa+sar%C3%A0+mai+portarvi+dentro+solo+tutto+il+tempo+per+sempre+solo+per+sempre+c%27%C3%A8+un+istante+che+rimane+l%C3%AC+piantato+eternamente+per+sempre+solo+per+sempre"
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 04 Jul 2015 12:57:13 GMT
+      X-Dl-Request-Id:
+      - 471915d7-931a-423c-4227-3cde0e12bc52
+      X-Dl-Units:
+      - '1'
+      X-Dl-Units-Left:
+      - '995.9'
+      X-Dl-Units-Reset:
+      - '2015-07-05 00:00:00 +0000'
+      Content-Length:
+      - '874'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"time":22,"annotations":[{"start":139,"end":143,"spot":"mena","confidence":0.6781,"id":2133620,"title":"Mena
+        d\u0027Egitto","uri":"http://it.wikipedia.org/wiki/Mena_d%27Egitto","label":"Mena
+        d\u0027Egitto"},{"start":309,"end":315,"spot":"valzer","confidence":0.7357,"id":236538,"title":"Valzer","uri":"http://it.wikipedia.org/wiki/Valzer","label":"Valzer"},{"start":416,"end":421,"spot":"tempo","confidence":0.637,"id":8905,"title":"Tempo","uri":"http://it.wikipedia.org/wiki/Tempo","label":"Tempo"},{"start":887,"end":892,"spot":"tempo","confidence":0.6401,"id":8905,"title":"Tempo","uri":"http://it.wikipedia.org/wiki/Tempo","label":"Tempo"},{"start":1036,"end":1043,"spot":"sanremo","confidence":0.6228,"id":2756642,"title":"Sanremo","uri":"http://it.wikipedia.org/wiki/Sanremo","label":"Sanremo"}],"lang":"it","langConfidence":1.0,"timestamp":"2015-07-04T12:57:13.644"}'
+    http_version: 
+  recorded_at: Sat, 04 Jul 2015 12:57:13 GMT
+recorded_with: VCR 2.9.3
