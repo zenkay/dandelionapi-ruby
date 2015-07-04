@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'spec_helper'
 
 vcr_options = { :cassette_name => "text_similarity", :record => :new_episodes }

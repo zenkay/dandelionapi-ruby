@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require "faraday"
 require "faraday_middleware"
 require "json"
