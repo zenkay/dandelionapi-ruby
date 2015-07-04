@@ -19,5 +19,5 @@ module Dandelionapi
   end
 
   class BadResponse < Exception; end
-  class BadParameters < Exception; end
+  class MissingParameters < Exception; end
 end

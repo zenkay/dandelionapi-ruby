@@ -31,7 +31,7 @@ describe Dandelionapi::LanguageDetection, vcr: vcr_options do
     end
   end
 
-  it "raise exception on wrong config parameters" do
+  it "raise BadResponse exception on wrong config parameters" do
     Dandelionapi.configure do |c|
       c.app_id = "bad-app-id"
       c.app_key = "bad-app-key"
@@ -41,5 +41,9 @@ describe Dandelionapi::LanguageDetection, vcr: vcr_options do
     expect { element.analyze(text: "test") }.to raise_error(Dandelionapi::BadResponse)
   end
 
+  it "raise MissingParameters exception when required params are missing" do
+    element = Dandelionapi::LanguageDetection.new
+    expect { element.analyze(other: "test") }.to raise_error(Dandelionapi::MissingParameters)
+  end
 
 end

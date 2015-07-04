@@ -11,6 +11,9 @@ module Dandelionapi
     attr_accessor :text, :url, :html, :html_fragment, :clean
 
     def analyze(options)
+
+      raise MissingParameters.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
+
       params = options
       call(ENDPOINT, params)
     end
