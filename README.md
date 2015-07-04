@@ -1,6 +1,6 @@
 # [![Ruby Gem Icon](https://raw.githubusercontent.com/zenkay/dandelionapi-ruby/master/rubygem.png)](https://rubygems.org/gems/dandelionapi) Dandelion API Ruby Gem
 
-[![Code Climate](https://codeclimate.com/github/zenkay/dandelionapi-ruby/badges/gpa.svg)](https://codeclimate.com/github/zenkay/dandelionapi-ruby) [![Travis CI](https://travis-ci.org/zenkay/dandelionapi-ruby.svg?branch=master)](https://travis-ci.org/zenkay/dandelionapi-ruby) [![Gem Version](https://badge.fury.io/rb/dandelionapi.svg)](http://badge.fury.io/rb/dandelionapi) [![Coverage Status](https://codeclimate.com/github/zenkay/dandelionapi-ruby/badges/coverage.svg)](https://codeclimate.com/github/zenkay/dandelionapi-ruby/coverage)
+[![Code Climate](https://codeclimate.com/github/zenkay/dandelionapi-ruby/badges/gpa.svg)](https://codeclimate.com/github/zenkay/dandelionapi-ruby) [![Travis CI](https://travis-ci.org/zenkay/dandelionapi-ruby.svg?branch=master)](https://travis-ci.org/zenkay/dandelionapi-ruby) [![Gem Version](https://badge.fury.io/rb/dandelionapi.svg)](http://badge.fury.io/rb/dandelionapi) [![Coverage Status](https://coveralls.io/repos/zenkay/dandelionapi-ruby/badge.svg)](https://coveralls.io/r/zenkay/dandelionapi-ruby)
 
 ## Installation
 
