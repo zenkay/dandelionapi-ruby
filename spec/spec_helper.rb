@@ -1,10 +1,10 @@
 # encoding: UTF-8
 
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+
 require 'simplecov'
 SimpleCov.start
-
-# require 'coveralls'
-# Coveralls.wear!
 
 require "dandelionapi"
 require 'vcr'
