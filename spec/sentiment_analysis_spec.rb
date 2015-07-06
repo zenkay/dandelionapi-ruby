@@ -25,7 +25,6 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
     response = element.analyze(
       text: "Mio padre che mi spinge a mangiare e guai se non finisco mio padre che vuol farmi guidare mi frena con il fischio"
     )
-    puts response.inspect
     expect(response).not_to be_empty
     expect(response["sentiment"]).not_to be_empty
     expect(response["sentiment"]["score"]).to be >= -1.0
