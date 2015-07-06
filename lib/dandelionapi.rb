@@ -6,6 +6,7 @@ require "dandelionapi/base"
 require "dandelionapi/entity_extraction"
 require "dandelionapi/text_similarity"
 require "dandelionapi/language_detection"
+require "dandelionapi/sentiment_analysis"
 
 module Dandelionapi
 
