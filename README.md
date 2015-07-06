@@ -62,7 +62,7 @@ response = element.analyze(text: "I'm really disappointed")
 
 ## About the DandelionAPI project
 
-This library is part of a larger group of libraries used to explore best strategy to build packages among multiple languages. Each library is written using conventions about coding style, filesystem structure, testing, documentation and distribution typical of the language enviroment but preserve the library main concepts. This version use the following conventions:
+This library is part of a larger group of libraries used to explore best strategies to build packages among multiple languages. Each library is written using conventions about coding style, filesystem structure, testing, documentation and distribution typical of the language enviroment but preserve the library main concepts. This version use the following conventions:
 
 - Tested using [RSpec](http://rspec.info/)
 - Documented using [YARD](http://yardoc.org/)
@@ -71,4 +71,4 @@ This library is part of a larger group of libraries used to explore best strateg
 
 ----
 
-Here is the entire list of libraries built by now: [Ruby](https://github.com/zenkay/dandelionapi-ruby), [PHP](https://github.com/zenkay/dandelionapi-ruby), [Node](https://github.com/zenkay/dandelionapi-ruby)
+Here is the complete list of libraries available: [Ruby](https://github.com/zenkay/dandelionapi-ruby), [PHP](https://github.com/zenkay/dandelionapi-php), [Node](https://github.com/zenkay/dandelionapi-node)
