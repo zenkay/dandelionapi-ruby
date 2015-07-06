@@ -62,7 +62,7 @@ response = element.analyze(text: "I'm really disappointed")
 
 ## About the DandelionAPI project
 
-This library is part of a larger group of libraries used to explore best strategies to build packages among multiple languages. Each library is written using conventions about coding style, filesystem structure, testing, documentation and distribution typical of the language enviroment but preserve the library main concepts. This version use the following conventions:
+This library is part of a larger group of libraries used to explore best strategies to build packages among multiple languages. Each library is written using conventions about coding style, filesystem structure, testing, documentation and distribution typical of the language enviroment but preserve the library main concepts. This version use the following conventions for the **Ruby** environment:
 
 - Tested using [RSpec](http://rspec.info/)
 - Documented using [YARD](http://yardoc.org/)
