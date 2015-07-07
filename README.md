@@ -1,6 +1,6 @@
 # [![Ruby Gem Icon](https://raw.githubusercontent.com/zenkay/dandelionapi-ruby/master/rubygem.png)](https://rubygems.org/gems/dandelionapi) Dandelion API Ruby Gem
 
-[![Code Climate](https://codeclimate.com/github/zenkay/dandelionapi-ruby/badges/gpa.svg)](https://codeclimate.com/github/zenkay/dandelionapi-ruby) [![Travis CI](https://travis-ci.org/zenkay/dandelionapi-ruby.svg?branch=master)](https://travis-ci.org/zenkay/dandelionapi-ruby) [![Gem Version](https://badge.fury.io/rb/dandelionapi.svg)](http://badge.fury.io/rb/dandelionapi) [![Coverage Status](https://coveralls.io/repos/zenkay/dandelionapi-ruby/badge.svg)](https://coveralls.io/r/zenkay/dandelionapi-ruby)
+[![Code Climate](https://codeclimate.com/github/zenkay/dandelionapi-ruby/badges/gpa.svg)](https://codeclimate.com/github/zenkay/dandelionapi-ruby) [![Travis CI](https://travis-ci.org/zenkay/dandelionapi-ruby.svg?branch=master)](https://travis-ci.org/zenkay/dandelionapi-ruby) [![Gem Version](https://badge.fury.io/rb/dandelionapi.svg)](http://badge.fury.io/rb/dandelionapi) [![Coverage Status](https://coveralls.io/repos/github/zenkay/dandelionapi-ruby/badge.svg?branch=master)](https://coveralls.io/github/zenkay/dandelionapi-ruby?branch=master)
 
 ## Installation
 
@@ -71,4 +71,4 @@ This library is part of a larger group of libraries used to explore best strateg
 
 ----
 
-Here is the complete list of libraries available: [Ruby](https://github.com/zenkay/dandelionapi-ruby), [PHP](https://github.com/zenkay/dandelionapi-php), [Node](https://github.com/zenkay/dandelionapi-node)
+Here is the complete list of available libraries: [Ruby](https://github.com/zenkay/dandelionapi-ruby), [PHP](https://github.com/zenkay/dandelionapi-php), [Node](https://github.com/zenkay/dandelionapi-node)
