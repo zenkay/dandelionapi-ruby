@@ -15,6 +15,7 @@ And then execute:
 ```
 $ bundle install
 ```
+
 ## Setup
 
 Setup configuration parameters
@@ -66,9 +67,10 @@ This library is part of a larger group of libraries used to explore best strateg
 
 - Tested using [RSpec](http://rspec.info/)
 - Documented using [YARD](http://yardoc.org/)
+- Quality monitored using [Travis CI](https://travis-ci.org/), [Code Climate](https://codeclimate.com/) and [Coveralls](https://coveralls.io/)
 - Packed using [Bundler](http://bundler.io/) and [Gem](https://rubygems.org/)
 - Distributed over [RubyGems](https://rubygems.org/) as [dandelionapi](https://rubygems.org/gems/dandelionapi)
 
 ----
 
-Here is the complete list of available libraries: [Ruby](https://github.com/zenkay/dandelionapi-ruby), [PHP](https://github.com/zenkay/dandelionapi-php), [Node](https://github.com/zenkay/dandelionapi-node)
+Here is the complete list of available libraries: [Ruby](https://github.com/zenkay/dandelionapi-ruby), [PHP](https://github.com/zenkay/dandelionapi-php), [Node](https://github.com/zenkay/dandelionapi-node), [Python](https://github.com/zenkay/dandelionapi-python)
