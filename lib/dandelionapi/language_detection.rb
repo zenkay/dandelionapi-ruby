@@ -6,15 +6,17 @@ require "json"
 
 module Dandelionapi
 
-  class LanguageDetection < Base
+  class LanguageDetection
 
-    ENDPOINT = "/datatxt/li/v1"
+  	include Base
+
+    ENDPOINT = "/li/v1"
 
     attr_accessor :text, :url, :html, :html_fragment, :clean
 
     def analyze(options)
 
-      raise MissingParameters.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
+      raise MissingParameter.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
 
       params = options
       call(ENDPOINT, params)

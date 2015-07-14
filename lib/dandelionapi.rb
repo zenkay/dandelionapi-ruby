@@ -33,7 +33,7 @@ module Dandelionapi
   # Container for configuration parameters
   #
   class Configuration
-    attr_accessor :app_id, :app_key, :endpoint
+    attr_accessor :app_id, :app_key, :endpoint, :path
   end
 
   # Exception raised for connection error
@@ -42,5 +42,18 @@ module Dandelionapi
 
   # Exception raised when a mandatory parameter is missing
   #  
-  class MissingParameters < Exception; end
+  class MissingParameter < Exception; end
+
+  # Exception raised when more than one require parameter is given
+  #  
+  class TooManyParameters < Exception; end
+
+  # Exception raised when a parameter is in the wrong type
+  #  
+  class WrongParameterType < Exception; end
+
+  # Exception raised when a parameter is in the wrong format
+  #  
+  class WrongParameterFormat < Exception; end
+
 end

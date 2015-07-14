@@ -12,6 +12,7 @@ describe Dandelionapi::TextSimilarity, vcr: vcr_options do
       c.app_id = "e0bca290"
       c.app_key = "2294c676b8698383764514cc219fad92"
       c.endpoint = "https://api.dandelion.eu/"
+      c.path = "datatxt/"
     end
   end
   

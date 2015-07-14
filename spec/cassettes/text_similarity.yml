@@ -43,4 +43,38 @@ http_interactions:
       string: '{"time":6,"similarity":0.0,"lang":"it","langConfidence":1.0,"timestamp":"2015-07-04T12:47:25.017"}'
     http_version: 
   recorded_at: Sat, 04 Jul 2015 12:47:25 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/sim/v1
+    body:
+      encoding: UTF-8
+      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&text1=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre&text2=Mio+padre+di+spalle+sul+piatto+si+mangia+la+vita+e+poi+sulla+pista+da+ballo+fa+un+valzer+dentro+il+suo+nuovo+vestito"
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 14 Jul 2015 16:54:16 GMT
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        {"error":true,"status":404,"code":"error.notFound","message":"API endpoint not found","data":{}}
+    http_version: 
+  recorded_at: Tue, 14 Jul 2015 16:54:15 GMT
 recorded_with: VCR 2.9.3

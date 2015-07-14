@@ -6,15 +6,17 @@ require "json"
 
 module Dandelionapi
 
-  class SentimentAnalysis < Base
+  class SentimentAnalysis
 
-    ENDPOINT = "/datatxt/sent/v1"
+  	include Base
+
+    ENDPOINT = "/sent/v1"
 
     attr_accessor :text, :url, :html, :html_fragment, :lang
 
     def analyze(options)
 
-      raise MissingParameters.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
+      raise MissingParameter.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
 
       params = options
       call(ENDPOINT, params)

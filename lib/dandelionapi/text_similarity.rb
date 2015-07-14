@@ -6,9 +6,11 @@ require "json"
 
 module Dandelionapi
 
-  class TextSimilarity < Base
+  class TextSimilarity
 
-    ENDPOINT = "/datatxt/sim/v1"
+  	include Base
+
+    ENDPOINT = "/sim/v1"
 
     attr_accessor :text1, :url1, :html1, :html_fragment1, :text2, :url2, :html2, :html_fragment2, :lang, :bow
 

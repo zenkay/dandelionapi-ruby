@@ -12,6 +12,7 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
       c.app_id = "e0bca290"
       c.app_key = "2294c676b8698383764514cc219fad92"
       c.endpoint = "https://api.dandelion.eu/"
+      c.path = "datatxt/"
     end
   end
   
@@ -42,8 +43,8 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
     expect { element.analyze(text: "test") }.to raise_error(Dandelionapi::BadResponse)
   end
 
-  it "raise MissingParameters exception when required params are missing" do
+  it "raise MissingParameter exception when required params are missing" do
     element = Dandelionapi::SentimentAnalysis.new
-    expect { element.analyze(other: "test") }.to raise_error(Dandelionapi::MissingParameters)
+    expect { element.analyze(other: "test") }.to raise_error(Dandelionapi::MissingParameter)
   end
 end
