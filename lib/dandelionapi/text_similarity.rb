@@ -8,14 +8,33 @@ module Dandelionapi
 
   class TextSimilarity
 
-    ENDPOINT = "/sim/v1"
+  	class Request < Comparison::Request
 
-    attr_accessor :text1, :url1, :html1, :html_fragment1, :text2, :url2, :html2, :html_fragment2, :lang, :bow
+	    ENDPOINT = "/sim/v1"
 
-    def analyze(options)
-      params = options
-      call(ENDPOINT, params)
-    end
+      MANDATORY_FIELDS_1 = [
+        "text1",
+        "url1",
+        "html1",
+        "html_fragment1"
+      ]
+
+      MANDATORY_FIELDS_2 = [
+        "text2",
+        "url2",
+        "html2",
+        "html_fragment2"
+      ]
+
+      OPTIONAL_FIELDS = [
+        "lang",
+        "bow"
+      ]
+
+	    def compare(options)
+	      params = options
+	      call(ENDPOINT, params)
+	    end
 
   end
 
