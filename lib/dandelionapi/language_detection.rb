@@ -7,7 +7,7 @@ require "json"
 module Dandelionapi
   module LanguageDetection
 
-  	class Request < Base::Request
+  	class Request < Analysis::Request
 
       ENDPOINT = "/li/v1"
 

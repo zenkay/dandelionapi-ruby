@@ -77,4 +77,219 @@ http_interactions:
         {"error":true,"status":404,"code":"error.notFound","message":"API endpoint not found","data":{}}
     http_version: 
   recorded_at: Tue, 14 Jul 2015 16:54:18 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/sent/v1
+    body:
+      encoding: UTF-8
+      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&html=%3C%21DOCTYPE+HTML+PUBLIC+%22-%2F%2FIETF%2F%2FDTD+HTML+2.0%2F%2FEN%22%3E%3Chtml%3E%3Chead%3E%3Ctitle%3E403+Forbidden%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ch1%3EForbidden%3C%2Fh1%3E%3Cp%3EYou+don+t+have+permission+to+access+%2Fon+this+server.%3C%2Fp%3E%3Cp%3EAdditionally%2C+a+404+Not+Founderror+was+encountered+while+trying+to+use+an+ErrorDocument+to+handle+the+request.%3C%2Fp%3E%3C%2Fbody%3E%3C%2Fhtml%3E"
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 15 Jul 2015 06:47:16 GMT
+      X-Dl-Request-Id:
+      - ad3f9fbd-7d14-4070-4917-f2b8c283365a
+      X-Dl-Units:
+      - '2'
+      X-Dl-Units-Left:
+      - '997.7'
+      X-Dl-Units-Reset:
+      - '2015-07-16 00:00:00 +0000'
+      Content-Length:
+      - '315'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"time":1,"sentiment":{"type":"negative","score":-0.7},"lang":"en","langConfidence":1.0,"text":"403
+        Forbidden\nYou don t have permission to access /on this server.\nAdditionally,
+        a 404 Not Founderror was encountered while trying to use an ErrorDocument
+        to handle the request.","timestamp":"2015-07-15T06:47:16.106"}'
+    http_version: 
+  recorded_at: Wed, 15 Jul 2015 06:47:18 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/sent/v1
+    body:
+      encoding: UTF-8
+      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&url=http%3A%2F%2Fblog.andreamostosi.name"
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 15 Jul 2015 06:47:16 GMT
+      X-Dl-Request-Id:
+      - 8967f225-616f-468b-60d9-405225d4f5ad
+      X-Dl-Units:
+      - '2'
+      X-Dl-Units-Left:
+      - '995.7'
+      X-Dl-Units-Reset:
+      - '2015-07-16 00:00:00 +0000'
+      Content-Length:
+      - '3726'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0aW1lIjo1LCJzZW50aW1lbnQiOnsidHlwZSI6InBvc2l0aXZlIiwic2Nv
+        cmUiOjAuNjY2NjY2NjY2NjY2NjY2N30sImxhbmciOiJlbiIsImxhbmdDb25m
+        aWRlbmNlIjoxLjAsInRleHQiOiJMZWFybiBpdCwgdGhlbiB1c2UgaXQuXG5E
+        dXJpbmcgdGhlIGxhc3QgY291cGxlIG9mIHdlZWtzIEkgaGFkIHRvIHdvcmsg
+        b24gYSBQSFAgcHJvamVjdCB3aXRoIGEgY3VzdG9tIFdvcmRQcmVzcyBzdGFj
+        ayBJIGhhdmUgbmV2ZXIgdXNlZCBiZWZvcmU6IEJlZHJvY2suXG5UaGUgaG9t
+        ZSBwYWdlIHNheXMg4oCcQmVkcm9jayBpcyBhIG1vZGVybiBXb3JkUHJlc3Mg
+        c3RhY2sgdGhhdCBnZXRzIHlvdSBzdGFydGVkIHdpdGggdGhlIGJlc3QgZGV2
+        ZWxvcG1lbnQgdG9vbHMsIHByYWN0aWNlcywgYW5kIHByb2plY3Qgc3RydWN0
+        dXJlLuKAnC5cbldoYXQgQmVkcm9jayByZWFsbHkgaXNcbkl0IGlzIGEgcmVn
+        dWxhciBXb3JkUHJlc3MgaW5zdGFsbGF0aW9uIHdpdGggYSBkaWZmZXJlbnQg
+        Zm9sZGVyIHN0cnVjdHVyZSBhbmQgaXMgaW50ZWdyYXRlZCB3aXRoIGNvbXBv
+        c2VyIGZvciBkZXBlbmRlbmNpZXMgbWFuYWdlbWVudCBhbmQgY2FwaXN0cmFu
+        byBmb3IgZGVwbG95LiBUaGUgc3RydWN0dXJlIHJlbWluZHMgUmFpbHMgb3Ig
+        c2ltaWxhciBmcmFtZXdvcmtzIGJ1dCBjb250YWlucyB1c3VhbCBXb3JkUHJl
+        c3MgY29tcG9uZW50IGFuZCBydW4gb24gdGhlIHNhbWUgd2ViIHN0YWNrLlxu
+        VGhlIHByb2plY3QgdXNlIHRvIHdvcmtzwqBvbiBBcGFjaGUgd2l0aCBtb2Rf
+        cGhwIGJ1dCBJIHBlcnNvbmFsbHkgZG9u4oCZdCBsaWtlIHRoaXMgc3RhY2su
+        IEnigJlkIGxpa2UgdG8gdGVzdCBpdCBvbiBISFZNIGJ1dCBhdCB0aGUgbW9t
+        ZW50IEkgcHJlZmVycmVkIHRvIHJ1biBpdCBvbiBuZ2lueCB3aXRoIFBIUC1G
+        UE0uwqBTdGFydGluZyB3aXRoIGFuIGVtcHR5IFVidW50dSAxNC4wNCBpbnN0
+        YWxsYXRpb24gSSBzZXQgdXAgYSBMRU1QIHN0YWNrIHdpdGggbWVtY2FjaGVk
+        IGFuZCBSZWRpcyB1c2luZyA6XG5FdmVyeXRoaW5nIHdvcmtzIGZpbmUgZXhj
+        ZXB0IHRoZSBSZWRpcyBleHRlbnNpb24gKHVzZWQgZm9yIGN1c3RvbSBmdW5j
+        dGlvbiB1bnJlbGF0ZWQgd2l0aCBXb3JkUHJlc3MpLiBJIGRvbuKAmXQga25v
+        dyB3aHkgYnV0IHRoZSBjb25maWcgZmlsZSB3YXNu4oCZdCBjb3BpZWQgaW50
+        byB0aGUgY29uZmlndXJhdGlvbiBkaXJlY3RvcnnCoC4gWW91IGNhbiBmaW5k
+        IGl0IGFtb25nIHRoZSBhdmFpbGFibGUgbW9kcyBpbnRvwqAuXG5QSFAtRlBN
+        IHVzZXMgYSBzdGFuZGFyZCBjb25maWd1cmF0aW9uIHBsYWNlZCBpbnRvIC4g
+        SXQgbGlzdGVuIG9uIDEyNy4wLjAuMTo5MDAwIG9yIHVuaXggc29ja2V0IGlu
+        IChJIGFzc3VtZSB0aGUgY29uZmlndXJlZCBuYW1lIHdhcyDigJxleGFtcGxl
+        4oCdKS5cbk1lbWNhY2hlZCBzaG91bGQgYmUgY29uZmlndXJlZCB0byBiZSB1
+        c2VkIGZvciBzZXNzaW9uIHNoYXJpbmcgYW1vbmcgbXVsdGlwbGUgc2VydmVy
+        cy4gVG8gYWN0aXZhdGXCoGl0IHlvdSBuZWVkIHRvIGVkaXQgdGhlIGNvbmZp
+        Z3VyYXRpb24gZmlsZSBzZXR0aW5nIHRoZSBmb2xsb3dpbmcgcGFyYW1ldGVy
+        cyBpbnRvXG5uZ2lueCBjb25maWd1cmF0aW9uIGlzIHBsYWNlZCBpbnRvIGFu
+        ZCBsaW5rZWQgaW50byBhcyB1c3VhbCBhbmQgZm9yd2FyZCByZXF1ZXN0IHRv
+        IFBIUC1GUE0gZm9yIFBIUCBmaWxlcy5cblJvb3QgZGlyZWN0b3J5IHdpbGwg
+        YmUgb2YgQmVkcm9jayBwcmVmaXhlZCB3aXRoIHRvIHN1cHBvcnQgdGhlIGNh
+        cGlzdHJhbm8gZGlyZWN0b3J5IHN0cnVjdHVyZSBkaXNwbGF5ZWQgYmVsb3cu
+        XG5J4oCZbSBxdWl0ZSBmYW1pbGlhciB3aXRoIGNhcGlzdHJhbm8gYmVjYXVz
+        ZSBvZiBteSBSdWJ5IHJlY2VudCBiYWNrZ3JvdW5kLiBZb3UgbmVlZCBhIFJ1
+        YnkgdmVyc2lvbiBncmVhdGVyIHRoZW4gMS45LjMgdG8gcnVuIGl0IChSVk0g
+        aGVscHMpLiBGaXJzdCBzdGVwIGlzIHRvIGRvd25sb2FkIGRlcGVuZGVuY2ll
+        cy4gUnVieSB1c2VzIEJ1bmRsZXIuXG5CdW5kbGVyIHJlYWQgdGhlIChhbmQg
+        KSBhbmQgZG93bmxvYWQgYWxsIHRoZSByZXF1aXJlZCBnZW1zIChSdWJ5IGxp
+        YnJhcmllcykuXG5Ob3cgdGhlIHRlY2hub2xvZ2ljYWwgc3RhY2sgaXMgcmVh
+        ZHkgbG9jYWxseSBhbmQgb24gc2VydmVyIEnigJlsbCBwcm9iYWJseSBkZXNj
+        cmliZSBob3cgdG8gcnVuIGEgTEVNUCBzdGFjayBvbiBPUyBYIGluIGEgbmV4
+        dCBwb3N0LiBGb3IgdGhlIG1vbWVudCBJ4oCZbSBhc3N1bWluZyB5b3UgYXJl
+        IGFibGUgdG8gcnVuIGl0IGxvY2FsbHkuIEhlcmUgaXMgdXNlZnVsIGd1aWRl
+        cyBiecKgSm9uYXMgRnJpZWRtYW5uIGFuZCBydENhbXAuXG5Bbnl3YXkgQmVk
+        cm9jayBjb3VsZCBydW4gb3ZlciBhbnkgTEFNUC9MRU1QIHN0YWNrLiBUaGUg
+        b25seSDigJxzcGVjaWFs4oCdIGZlYXR1cmUgaXMgdGhlIENvbXBvc2VyIGlu
+        dGVncmF0aW9uLiBDb21wb3NlciBmb3IgUEhQIGlzIGxpa2UgQnVuZGxlciBm
+        b3IgUnVieS4gSGVscHMgZGV2ZWxvcGVycyB0byBtYW5hZ2UgZGVwZW5kZW5j
+        aWVzIGluIHRoZSBwcm9qZWN0LiBIZXJlIGlzIHVzZWQgdG8gbWFuYWdlIHBs
+        dWdpbnMsIHRoZW1lcyBhbmQgV29yZFByZXNzIGNvcmUgdXBkYXRlLlxuWW91
+        IGNhbiBydW4gdG8gaW5zdGFsbCBsaWJyYXJpZXMuIElmIHlvdSB1cGRhdGUg
+        bGlicmFyaWVzIGNvbmZpZ3VyYXRpb24gb3IgeW91IHdhbnQgdG8gZm9yY2Ug
+        ZG93bmxvYWQgb2YgdGhlbSAobWF5YmUgYWZ0ZXIgYSBmcmVzaCBpbnN0YWxs
+        KSBydW4gLlxuQ2FwaXN0cmFubyBlbmFibGUgdXNlciB0byBzZXR1cCBkaWZm
+        ZXJlbnQgZGVwbG95IGVudmlyb25tZW50LiBBIGdsb2JhbCBjb25maWd1cmF0
+        aW9uIGlzIGRlZmluZWQgYW5kIHlvdSBuZWVkIHRvIHNwZWNpZnkgb25seSBj
+        dXN0b20gY29uZmlndXJhdGlvbiBmb3IgZWFjaCBlbnZpcm9ubWVudC4gQW4g
+        ZXhhbXBsZSBvZiA6XG5FdmVyeXRoaW5nIGVsc2UgaXMgaW5oZXJpdGVkIGZy
+        b20gZ2xvYmFsIGNvbmZpZyB3aGVyZSBhcmUgZGVmaW5lZCBhbGwgdGhlIG90
+        aGVyIGRlcGxveSBwcm9wZXJ0aWVzLiBJcyBpbXBvcnRhbnQgdG8gc2F5IHRo
+        YXQgZGVwbG95IHNjcmlwdCBvZiBjYXBpc3RyYW5vIG9uIEJlZHJvY2sgb25s
+        eSBkb3dubG9hZCBzb3VyY2UgY29kZSBmcm9tIEdpdCByZXBvIGFuZCBydW4g
+        Zm9yIG1haW4gcHJvamVjdC4gSWYgeW91IG5lZWQgdG8gcnVuIGluIG9uIGFu
+        eSBwbHVnaW4geW91IG5ldyB0byBkZWZpbmUgYSBjdXN0b20gY2FwaXN0cmFu
+        byB0YXNrIGFuZCBydW4gaXQgYWZ0ZXIgdGhlIGVuZCBvZiBkZXBsb3kuIEZv
+        ciBpbnN0YW5jZSB5b3UgY2FuIGFkZCBpbiB0aGUgZ2xvYmFsIGNvbmZpZ3Vy
+        YXRpb24gdGhlIGZvbGxvd2luZyBsaW5lcyBpbiBvcmRlciB0byBpbnN0YWxs
+        IGRlcGVuZGVuY2llcyBvbiBhIHNwZWNpZmljIHBsdWdpbjpcbk5vdyB5b3Ug
+        YXJlIHJlYWR5IHRvIGRlcGxveSB5b3VyIEJlZHJvY2sgaW5zdGFsbCBvbiBz
+        ZXJ2ZXIhIFNpbXBseSBydW4gLCByZXN0YXJ0IFBIUC1GUE0gKCkgYW5kIGVu
+        am95IGl0IPCfmIBcbk1hbnkgdGhhbmtzIHRvIEdpdXNlcHBlLCBncmVhdCBz
+        eXNhZG1pbiBhbmQgZnJpZW5kLCBmb3Igc3VwcG9ydCBkdXJpbmcgZGV2ZWxv
+        cG1lbnQgYW5kIGRlcGxveSBvZiB0aGlzIEAjQD8hP0AjwqBhcHBsaWNhdGlv
+        bi4iLCJ1cmwiOiJodHRwOi8vYmxvZy5hbmRyZWFtb3N0b3NpLm5hbWUiLCJ0
+        aW1lc3RhbXAiOiIyMDE1LTA3LTE1VDA2OjQ3OjE2Ljg2NCJ9
+    http_version: 
+  recorded_at: Wed, 15 Jul 2015 06:47:19 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/sent/v1
+    body:
+      encoding: UTF-8
+      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&html_fragment=%3Ch1%3EQuesto+%C3%A8+un+test%3C%2Fh1%3E"
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 15 Jul 2015 06:47:17 GMT
+      X-Dl-Request-Id:
+      - fc346939-73b8-4aa1-476b-6f1c5acc6a71
+      X-Dl-Units:
+      - '0'
+      X-Dl-Units-Left:
+      - '995.7'
+      X-Dl-Units-Reset:
+      - '2015-07-16 00:00:00 +0000'
+      Content-Length:
+      - '124'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"time":0,"sentiment":{"type":"neutral","score":0.0},"lang":"it","langConfidence":1.0,"timestamp":"2015-07-15T06:47:17.168"}'
+    http_version: 
+  recorded_at: Wed, 15 Jul 2015 06:47:19 GMT
 recorded_with: VCR 2.9.3

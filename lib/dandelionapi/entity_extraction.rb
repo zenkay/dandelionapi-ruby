@@ -7,7 +7,7 @@ require "json"
 module Dandelionapi
   module EntityExtraction
     
-    class Request < Base::Request
+    class Request < Analysis::Request
 
       ENDPOINT = "/nex/v1"
 

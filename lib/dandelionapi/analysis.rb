@@ -5,12 +5,11 @@ require "faraday_middleware"
 require "json"
 
 module Dandelionapi
-  module Base
+  module Analysis
 
     class Request
 
       def analyze(options)
-
         params = filter_permitted_params options
 
         if required_params_missing? params
@@ -63,15 +62,6 @@ module Dandelionapi
 
       def mandatory_fields_count params
         (self.class::MANDATORY_FIELDS & params.keys).size
-      end
-
-      def verify_type params, &block
-        params.each do |key, value|
-          formats = [self.class::FIELDS_FORMAT[key][:type]] unless self.class::FIELDS_FORMAT[key][:type].is_a? Array
-          unless formats.include? value.class
-            yield key
-          end
-        end
       end
 
       def verify_format params, &block

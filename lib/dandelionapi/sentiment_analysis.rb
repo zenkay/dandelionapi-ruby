@@ -8,7 +8,7 @@ module Dandelionapi
 
   module SentimentAnalysis
 
-    class Request < Base::Request
+    class Request < Analysis::Request
 
       ENDPOINT = "/sent/v1"
 

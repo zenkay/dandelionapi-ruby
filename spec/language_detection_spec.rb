@@ -97,7 +97,7 @@ describe Dandelionapi::LanguageDetection, vcr: vcr_options do
     expect { element.analyze(url: 3.14) }.to raise_error(Dandelionapi::WrongParameterFormat)
   end
 
-  it "raise WrongParameterFormat exception on unexistent lang" do
+  it "raise WrongParameterFormat exception on wrong clean param" do
     element = Dandelionapi::LanguageDetection::Request.new
     expect { element.analyze(text: "text", clean: "wrong") }.to raise_error(Dandelionapi::WrongParameterFormat)
   end
