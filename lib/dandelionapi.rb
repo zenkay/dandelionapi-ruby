@@ -2,7 +2,9 @@
 
 require "dandelionapi/version"
 
+require "dandelionapi/base"
 require "dandelionapi/analysis"
+require "dandelionapi/comparison"
 require "dandelionapi/entity_extraction"
 require "dandelionapi/text_similarity"
 require "dandelionapi/language_detection"

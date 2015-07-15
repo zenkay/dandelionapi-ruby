@@ -7,7 +7,7 @@ require "json"
 module Dandelionapi
   module Comparison
 
-    class Request
+    class Request < Base::Request
 
       def compare(options)
       end

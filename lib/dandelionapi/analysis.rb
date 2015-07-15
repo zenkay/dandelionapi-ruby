@@ -7,7 +7,7 @@ require "json"
 module Dandelionapi
   module Analysis
 
-    class Request
+    class Request < Base::Request
 
       def analyze(options)
         params = filter_permitted_params options
@@ -28,23 +28,6 @@ module Dandelionapi
       end
 
       protected
-
-      def call(endpoint, params)
-        begin
-          params = params.merge(
-            :$app_id => Dandelionapi.config.app_id,
-            :$app_key => Dandelionapi.config.app_key
-          )
-          conn = Faraday.new(url: Dandelionapi.config.endpoint) do |faraday|
-            faraday.request  :url_encoded
-            faraday.adapter  Faraday.default_adapter
-          end
-          response = conn.post "#{Dandelionapi.config.path}#{endpoint}", params
-          JSON.parse response.body
-        rescue Exception => e
-          raise Dandelionapi::BadResponse
-        end
-      end
 
       def filter_permitted_params options
         params = {}
@@ -72,19 +55,6 @@ module Dandelionapi
         end
       end
 
-    end
-
-    class Response
-
-      attr_accessor :timestamp, :time, :lang, :annotations
-
-      def initialize(object)
-        timestamp = object[:timestamp]
-        time = object[:time]
-        lang = object[:lang]
-        annotations = object[:annotations]
-      end
-      
     end
   end
 end

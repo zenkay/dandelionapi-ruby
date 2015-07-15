@@ -36,6 +36,7 @@ module Dandelionapi
 	      call(ENDPOINT, params)
 	    end
 
+    end
   end
 
 end
