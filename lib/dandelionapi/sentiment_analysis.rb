@@ -6,20 +6,46 @@ require "json"
 
 module Dandelionapi
 
-  class SentimentAnalysis
+  module SentimentAnalysis
 
-  	include Base
+    class Request < Base::Request
 
-    ENDPOINT = "/sent/v1"
+      ENDPOINT = "/sent/v1"
 
-    attr_accessor :text, :url, :html, :html_fragment, :lang
+      MANDATORY_FIELDS = [
+        "text",
+        "url",
+        "html",
+        "html_fragment"
+      ]
 
-    def analyze(options)
+      OPTIONAL_FIELDS = [
+        "lang"
+      ]
 
-      raise MissingParameter.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
+      FIELDS_FORMAT = {
+        "text" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'text needs to be String'
+        }, 
+        "url" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'url needs to be String'
+        },  
+        "html" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'html needs to be String'
+        },  
+        "html_fragment" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'html_fragment needs to be String'
+        }, 
+        "lang" => {
+          valid: lambda {|value| (value.is_a? String and ["de", "en", "fr", "it", "pt", "auto"].include? value)},
+          error_message: 'lang needs to be one of the following values: "de", "en", "fr", "it", "pt", "auto"'
+        } 
+      }
 
-      params = options
-      call(ENDPOINT, params)
     end
 
   end

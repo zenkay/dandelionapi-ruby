@@ -31,9 +31,7 @@ describe Dandelionapi::EntityExtraction, vcr: vcr_options do
 
   it "make a request to nex using italian plain text" do
     element = Dandelionapi::EntityExtraction::Request.new
-    response = element.analyze(
-      text: "Mio padre che mi spinge a mangiare e guai se non finisco mio padre che vuol farmi guidare mi frena con il fischio il bambino più grande mi mena davanti a tutti gli altri lui che passa per caso mi salva e mi condanna per sempre mio padre di spalle sul piatto si mangia la vita e poi sulla pista da ballo fa un valzer dentro il suo nuovo vestito  Per sempre solo per sempre cosa sarà mai porvarvi dentro solo tutto il tempo per sempre solo per sempre c'è un istante che rimane lì piantato eternamente E lei che non si lascia afferrare si piega indietro e ride e lei che dice quanto mi ama e io che mi fido e lei che mi toccava per prima la sua mano bambina vuole che le giuri qualcosa le si gonfia una vena e lei che era troppo più forte sicura di tutto e prima di andarsene mi dà il profilo con un movimento perfetto Per sempre solo per sempre cosa sarà mai portarvi dentro solo tutto il tempo per sempre solo per sempre c'è un istante che rimane lì piantato eternamente per sempre solo per sempre Mia madre che prepara la cena cantando sanremo carezza la testa a mio padre gli dice vedrai che ce la faremo Per sempre solo per sempre cosa sarà mai portarvi dentro solo tutto il tempo per sempre solo per sempre c'è un istante che rimane lì piantato eternamente per sempre solo per sempre"
-    )
+    response = element.analyze(text: "Mio padre che mi spinge a mangiare e guai se non finisco mio padre che vuol farmi guidare mi frena con il fischio il bambino più grande mi mena davanti a tutti gli altri lui che passa per caso mi salva e mi condanna per sempre mio padre di spalle sul piatto si mangia la vita e poi sulla pista da ballo fa un valzer dentro il suo nuovo vestito  Per sempre solo per sempre cosa sarà mai porvarvi dentro solo tutto il tempo per sempre solo per sempre c'è un istante che rimane lì piantato eternamente E lei che non si lascia afferrare si piega indietro e ride e lei che dice quanto mi ama e io che mi fido e lei che mi toccava per prima la sua mano bambina vuole che le giuri qualcosa le si gonfia una vena e lei che era troppo più forte sicura di tutto e prima di andarsene mi dà il profilo con un movimento perfetto Per sempre solo per sempre cosa sarà mai portarvi dentro solo tutto il tempo per sempre solo per sempre c'è un istante che rimane lì piantato eternamente per sempre solo per sempre Mia madre che prepara la cena cantando sanremo carezza la testa a mio padre gli dice vedrai che ce la faremo Per sempre solo per sempre cosa sarà mai portarvi dentro solo tutto il tempo per sempre solo per sempre c'è un istante che rimane lì piantato eternamente per sempre solo per sempre")
     expect(response).not_to be_empty
     expect(response["lang"]).to eq("it")
     expect(response["annotations"]).to be_an_instance_of(Array)
@@ -95,24 +93,17 @@ describe Dandelionapi::EntityExtraction, vcr: vcr_options do
     expect { element.analyze(other: "test") }.to raise_error(Dandelionapi::MissingParameter)
   end
 
-  # wrong params type
-
-  it "raise WrongParameterType exception on wrong Integer parameter type" do
-    element = Dandelionapi::EntityExtraction::Request.new
-    expect { element.analyze(text: 1) }.to raise_error(Dandelionapi::WrongParameterType)
-  end
-
-  it "raise WrongParameterType exception on wrong Integer parameter type" do
-    element = Dandelionapi::EntityExtraction::Request.new
-    expect { element.analyze(url: 10.0) }.to raise_error(Dandelionapi::WrongParameterType)
-  end
-
-  it "raise WrongParameterType exception on wrong Array parameter type" do
-    element = Dandelionapi::EntityExtraction::Request.new
-    expect { element.analyze(text: ["foo", "bar"]) }.to raise_error(Dandelionapi::WrongParameterType)
-  end
-
   # wrong params format
+
+  it "raise WrongParameterFormat exception on numeric text" do
+    element = Dandelionapi::EntityExtraction::Request.new
+    expect { element.analyze(text: 35) }.to raise_error(Dandelionapi::WrongParameterFormat)
+  end
+
+  it "raise WrongParameterFormat exception on numeric url" do
+    element = Dandelionapi::EntityExtraction::Request.new
+    expect { element.analyze(url: 3.14) }.to raise_error(Dandelionapi::WrongParameterFormat)
+  end
 
   it "raise WrongParameterFormat exception on unexistent lang" do
     element = Dandelionapi::EntityExtraction::Request.new

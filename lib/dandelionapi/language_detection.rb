@@ -5,23 +5,47 @@ require "faraday_middleware"
 require "json"
 
 module Dandelionapi
+  module LanguageDetection
 
-  class LanguageDetection
+  	class Request < Base::Request
 
-  	include Base
+      ENDPOINT = "/li/v1"
 
-    ENDPOINT = "/li/v1"
+      MANDATORY_FIELDS = [
+        "text",
+        "url",
+        "html",
+        "html_fragment"
+      ]
 
-    attr_accessor :text, :url, :html, :html_fragment, :clean
+      OPTIONAL_FIELDS = [
+        "clean"
+      ]
 
-    def analyze(options)
+      FIELDS_FORMAT = {
+        "text" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'text needs to be String'
+        }, 
+        "url" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'url needs to be String'
+        },  
+        "html" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'html needs to be String'
+        },  
+        "html_fragment" => {
+          valid: lambda {|value| value.is_a? String},
+          error_message: 'html_fragment needs to be String'
+        }, 
+        "clean" => {
+          valid: lambda {|value| (value.is_a? TrueClass or value.is_a? FalseClass)},
+          error_message: 'clean needs to be Boolean'
+        }, 
+      }
 
-      raise MissingParameter.new("Please provide one of the following parameters: text, url, html or html_fragment") if ([:text, :url, :html, :html_fragment] & options.keys).empty?
-
-      params = options
-      call(ENDPOINT, params)
     end
 
   end
-
 end

@@ -17,12 +17,12 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
   end
   
   it "initialize a new nex request" do
-    request = Dandelionapi::SentimentAnalysis.new
-    expect(request).to be_an_instance_of(Dandelionapi::SentimentAnalysis)
+    request = Dandelionapi::SentimentAnalysis::Request.new
+    expect(request).to be_an_instance_of(Dandelionapi::SentimentAnalysis::Request)
   end
 
   it "make a request to sent using italian plain text" do
-    element = Dandelionapi::SentimentAnalysis.new
+    element = Dandelionapi::SentimentAnalysis::Request.new
     response = element.analyze(
       text: "Mio padre che mi spinge a mangiare e guai se non finisco mio padre che vuol farmi guidare mi frena con il fischio"
     )
@@ -39,12 +39,12 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
       c.app_key = "bad-app-key"
       c.endpoint = "not-an-url-endpoint"
     end
-    element = Dandelionapi::SentimentAnalysis.new
+    element = Dandelionapi::SentimentAnalysis::Request.new
     expect { element.analyze(text: "test") }.to raise_error(Dandelionapi::BadResponse)
   end
 
   it "raise MissingParameter exception when required params are missing" do
-    element = Dandelionapi::SentimentAnalysis.new
+    element = Dandelionapi::SentimentAnalysis::Request.new
     expect { element.analyze(other: "test") }.to raise_error(Dandelionapi::MissingParameter)
   end
 end

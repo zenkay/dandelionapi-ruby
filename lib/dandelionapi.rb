@@ -48,10 +48,6 @@ module Dandelionapi
   #  
   class TooManyParameters < Exception; end
 
-  # Exception raised when a parameter is in the wrong type
-  #  
-  class WrongParameterType < Exception; end
-
   # Exception raised when a parameter is in the wrong format
   #  
   class WrongParameterFormat < Exception; end
