@@ -16,7 +16,7 @@ module Dandelionapi
   #
   # @example
   #   Dandelionapi.configure do |c|
-  #     c.app_id = "test"
+  #     c.token = "test"
   #   end
   #
   def self.configure(&block)
@@ -26,7 +26,7 @@ module Dandelionapi
   # Return configuration parameters
   #
   # @example
-  #   Dandelionapi.config.app_id
+  #   Dandelionapi.config.token
   #
   def self.config
     @config
@@ -35,7 +35,7 @@ module Dandelionapi
   # Container for configuration parameters
   #
   class Configuration
-    attr_accessor :app_id, :app_key, :endpoint, :path
+    attr_accessor :token, :endpoint, :path
   end
 
   # Exception raised for connection error

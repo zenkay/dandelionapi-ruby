@@ -10,8 +10,7 @@ module Dandelionapi
       def call(endpoint, params)
         begin
           params = params.merge(
-            :$app_id => Dandelionapi.config.app_id,
-            :$app_key => Dandelionapi.config.app_key
+            :token => Dandelionapi.config.token
           )
           conn = Faraday.new(url: Dandelionapi.config.endpoint) do |faraday|
             faraday.request  :url_encoded

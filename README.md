@@ -22,8 +22,7 @@ Setup configuration parameters
 
 ```
 Dandelionapi.configure do |c|
-  c.app_id = "your-app-id-for-dandelionapi-account"
-  c.app_key = "your-app-key-for-dandelionapi-account"
+  c.token = "your-token-for-dandelionapi-account"
   c.endpoint = "https://api.dandelion.eu/"
 end
 ```
