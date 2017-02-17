@@ -13,8 +13,7 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
   before(:each) do
     Dandelionapi.configure do |c|
       # account: Mario Rossi <datatxt@mailinator.com>
-      c.app_id = "e0bca290"
-      c.app_key = "2294c676b8698383764514cc219fad92"
+      c.token = "YOUR-TEST-TOKEN"
       c.endpoint = "https://api.dandelion.eu/"
       c.path = "datatxt/"
     end
@@ -102,8 +101,7 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
 
   it "raise BadResponse exception on wrong config parameters" do
     Dandelionapi.configure do |c|
-      c.app_id = "bad-app-id"
-      c.app_key = "bad-app-key"
+      c.token = "bad-token"
       c.endpoint = "not-an-url-endpoint"
     end
     element = Dandelionapi::SentimentAnalysis::Request.new

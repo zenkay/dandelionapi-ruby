@@ -4,291 +4,408 @@ http_interactions:
     method: post
     uri: https://api.dandelion.eu/datatxt/li/v1
     body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&text=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre"
+      encoding: US-ASCII
+      string: html_fragment=%3Ch1%3EQuesto+%C3%A8+un+test%3C%2Fh1%3E&token=YOUR-TEST-TOKEN
     headers:
       User-Agent:
-      - Faraday v0.9.1
+      - Faraday v0.11.0
       Content-Type:
       - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 17 Feb 2017 09:00:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Sat, 04 Jul 2015 12:44:05 GMT
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - ! '*'
       X-Dl-Request-Id:
-      - 259046d8-d613-412b-632e-97d40abbb474
+      - 325f0c38-7ea7-4bfb-5fde-60c4748f1f28
       X-Dl-Units:
       - '0.1'
       X-Dl-Units-Left:
-      - '999.9'
+      - '950.6999999999999'
       X-Dl-Units-Reset:
-      - '2015-07-05 00:00:00 +0000'
-      Content-Length:
-      - '97'
-      Connection:
-      - keep-alive
+      - '2017-02-18 00:00:00 +0000'
+      X-Uniapi-Cost:
+      - units=0.100
     body:
-      encoding: UTF-8
-      string: '{"time":1,"detectedLangs":[{"lang":"it","confidence":1.0}],"timestamp":"2015-07-04T12:44:05.092"}'
+      encoding: US-ASCII
+      string: ! '{"time":1,"detectedLangs":[{"lang":"it","confidence":1.0}],"timestamp":"2017-02-17T09:00:34.545"}'
     http_version: 
-  recorded_at: Sat, 04 Jul 2015 12:44:05 GMT
-- request:
-    method: post
-    uri: https://api.dandelion.eu/li/v1
-    body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&text=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre"
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 14 Jul 2015 16:54:18 GMT
-      Content-Length:
-      - '97'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: |
-        {"error":true,"status":404,"code":"error.notFound","message":"API endpoint not found","data":{}}
-    http_version: 
-  recorded_at: Tue, 14 Jul 2015 16:54:18 GMT
+  recorded_at: Fri, 17 Feb 2017 09:00:34 GMT
 - request:
     method: post
     uri: https://api.dandelion.eu/datatxt/li/v1
     body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&html_fragment=%3Ch1%3EQuesto+%C3%A8+un+test%3C%2Fh1%3E"
+      encoding: US-ASCII
+      string: html=%3C%21DOCTYPE+HTML+PUBLIC+%22-%2F%2FIETF%2F%2FDTD+HTML+2.0%2F%2FEN%22%3E%3Chtml%3E%3Chead%3E%3Ctitle%3E403+Forbidden%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ch1%3EForbidden%3C%2Fh1%3E%3Cp%3EYou+don+t+have+permission+to+access+%2Fon+this+server.%3C%2Fp%3E%3Cp%3EAdditionally%2C+a+404+Not+Founderror+was+encountered+while+trying+to+use+an+ErrorDocument+to+handle+the+request.%3C%2Fp%3E%3C%2Fbody%3E%3C%2Fhtml%3E&token=YOUR-TEST-TOKEN
     headers:
       User-Agent:
-      - Faraday v0.9.1
+      - Faraday v0.11.0
       Content-Type:
       - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 17 Feb 2017 09:00:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Wed, 15 Jul 2015 06:21:29 GMT
-      X-Dl-Request-Id:
-      - 9d05fdac-11a7-4d56-5b68-cedf9e1a32a1
-      X-Dl-Units:
-      - '0.1'
-      X-Dl-Units-Left:
-      - '999.9'
-      X-Dl-Units-Reset:
-      - '2015-07-16 00:00:00 +0000'
-      Content-Length:
-      - '97'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"time":1,"detectedLangs":[{"lang":"it","confidence":1.0}],"timestamp":"2015-07-15T06:21:29.517"}'
-    http_version: 
-  recorded_at: Wed, 15 Jul 2015 06:21:32 GMT
-- request:
-    method: post
-    uri: https://api.dandelion.eu/datatxt/li/v1
-    body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&html=%3C%21DOCTYPE+HTML+PUBLIC+%22-%2F%2FIETF%2F%2FDTD+HTML+2.0%2F%2FEN%22%3E%3Chtml%3E%3Chead%3E%3Ctitle%3E403+Forbidden%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ch1%3EForbidden%3C%2Fh1%3E%3Cp%3EYou+don+t+have+permission+to+access+%2Fon+this+server.%3C%2Fp%3E%3Cp%3EAdditionally%2C+a+404+Not+Founderror+was+encountered+while+trying+to+use+an+ErrorDocument+to+handle+the+request.%3C%2Fp%3E%3C%2Fbody%3E%3C%2Fhtml%3E"
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 15 Jul 2015 06:21:29 GMT
-      X-Dl-Request-Id:
-      - 4156e47b-5c48-4c31-5a53-8b6240e35a67
-      X-Dl-Units:
-      - '0.1'
-      X-Dl-Units-Left:
-      - '999.8'
-      X-Dl-Units-Reset:
-      - '2015-07-16 00:00:00 +0000'
       Content-Length:
       - '286'
       Connection:
       - keep-alive
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Dl-Request-Id:
+      - b442bbe1-6be1-4916-776a-a4308837a4ae
+      X-Dl-Units:
+      - '0.1'
+      X-Dl-Units-Left:
+      - '950.6'
+      X-Dl-Units-Reset:
+      - '2017-02-18 00:00:00 +0000'
+      X-Uniapi-Cost:
+      - units=0.100
     body:
-      encoding: UTF-8
-      string: '{"time":2,"detectedLangs":[{"lang":"en","confidence":1.0}],"text":"403
+      encoding: US-ASCII
+      string: ! '{"time":2,"detectedLangs":[{"lang":"en","confidence":1.0}],"text":"403
         Forbidden\nYou don t have permission to access /on this server.\nAdditionally,
         a 404 Not Founderror was encountered while trying to use an ErrorDocument
-        to handle the request.","timestamp":"2015-07-15T06:21:29.797"}'
+        to handle the request.","timestamp":"2017-02-17T09:00:34.903"}'
     http_version: 
-  recorded_at: Wed, 15 Jul 2015 06:21:32 GMT
+  recorded_at: Fri, 17 Feb 2017 09:00:34 GMT
 - request:
     method: post
     uri: https://api.dandelion.eu/datatxt/li/v1
     body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&url=http%3A%2F%2Fblog.andreamostosi.name"
+      encoding: US-ASCII
+      string: token=YOUR-TEST-TOKEN&url=http%3A%2F%2Fblog.andreamostosi.name
     headers:
       User-Agent:
-      - Faraday v0.9.1
+      - Faraday v0.11.0
       Content-Type:
       - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Type:
-      - application/json;charset=UTF-8
-      Date:
-      - Wed, 15 Jul 2015 06:21:30 GMT
-      X-Dl-Request-Id:
-      - 29fc79bc-d2bb-400a-4a8e-f5c72b2337c2
-      X-Dl-Units:
-      - '0.1'
-      X-Dl-Units-Left:
-      - '999.7'
-      X-Dl-Units-Reset:
-      - '2015-07-16 00:00:00 +0000'
-      Content-Length:
-      - '3683'
-      Connection:
-      - keep-alive
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxNyBGZWIgMjAxNyAwOTowMDozNSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "WC1EbC1SZXF1ZXN0LUlk":
+      - !binary |-
+        NDI1MDkzM2MtZTRlZS00Yjk3LTQ5YTgtNmRhZDBjNjAxNzI0
+      !binary "WC1EbC1Vbml0cw==":
+      - !binary |-
+        MC4x
+      !binary "WC1EbC1Vbml0cy1MZWZ0":
+      - !binary |-
+        OTUwLjU=
+      !binary "WC1EbC1Vbml0cy1SZXNldA==":
+      - !binary |-
+        MjAxNy0wMi0xOCAwMDowMDowMCArMDAwMA==
+      !binary "WC1VbmlhcGktQ29zdA==":
+      - !binary |-
+        dW5pdHM9MC4xMDA=
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJ0aW1lIjozLCJkZXRlY3RlZExhbmdzIjpbeyJsYW5nIjoiZW4iLCJjb25m
         aWRlbmNlIjoxLjB9XSwidGV4dCI6IkxlYXJuIGl0LCB0aGVuIHVzZSBpdC5c
-        bkR1cmluZyB0aGUgbGFzdCBjb3VwbGUgb2Ygd2Vla3MgSSBoYWQgdG8gd29y
-        ayBvbiBhIFBIUCBwcm9qZWN0IHdpdGggYSBjdXN0b20gV29yZFByZXNzIHN0
-        YWNrIEkgaGF2ZSBuZXZlciB1c2VkIGJlZm9yZTogQmVkcm9jay5cblRoZSBo
-        b21lIHBhZ2Ugc2F5cyDigJxCZWRyb2NrIGlzIGEgbW9kZXJuIFdvcmRQcmVz
-        cyBzdGFjayB0aGF0IGdldHMgeW91IHN0YXJ0ZWQgd2l0aCB0aGUgYmVzdCBk
-        ZXZlbG9wbWVudCB0b29scywgcHJhY3RpY2VzLCBhbmQgcHJvamVjdCBzdHJ1
-        Y3R1cmUu4oCcLlxuV2hhdCBCZWRyb2NrIHJlYWxseSBpc1xuSXQgaXMgYSBy
-        ZWd1bGFyIFdvcmRQcmVzcyBpbnN0YWxsYXRpb24gd2l0aCBhIGRpZmZlcmVu
-        dCBmb2xkZXIgc3RydWN0dXJlIGFuZCBpcyBpbnRlZ3JhdGVkIHdpdGggY29t
-        cG9zZXIgZm9yIGRlcGVuZGVuY2llcyBtYW5hZ2VtZW50IGFuZCBjYXBpc3Ry
-        YW5vIGZvciBkZXBsb3kuIFRoZSBzdHJ1Y3R1cmUgcmVtaW5kcyBSYWlscyBv
-        ciBzaW1pbGFyIGZyYW1ld29ya3MgYnV0IGNvbnRhaW5zIHVzdWFsIFdvcmRQ
-        cmVzcyBjb21wb25lbnQgYW5kIHJ1biBvbiB0aGUgc2FtZSB3ZWIgc3RhY2su
-        XG5UaGUgcHJvamVjdCB1c2UgdG8gd29ya3PCoG9uIEFwYWNoZSB3aXRoIG1v
-        ZF9waHAgYnV0IEkgcGVyc29uYWxseSBkb27igJl0IGxpa2UgdGhpcyBzdGFj
-        ay4gSeKAmWQgbGlrZSB0byB0ZXN0IGl0IG9uIEhIVk0gYnV0IGF0IHRoZSBt
-        b21lbnQgSSBwcmVmZXJyZWQgdG8gcnVuIGl0IG9uIG5naW54IHdpdGggUEhQ
-        LUZQTS7CoFN0YXJ0aW5nIHdpdGggYW4gZW1wdHkgVWJ1bnR1IDE0LjA0IGlu
-        c3RhbGxhdGlvbiBJIHNldCB1cCBhIExFTVAgc3RhY2sgd2l0aCBtZW1jYWNo
-        ZWQgYW5kIFJlZGlzIHVzaW5nIDpcbkV2ZXJ5dGhpbmcgd29ya3MgZmluZSBl
-        eGNlcHQgdGhlIFJlZGlzIGV4dGVuc2lvbiAodXNlZCBmb3IgY3VzdG9tIGZ1
-        bmN0aW9uIHVucmVsYXRlZCB3aXRoIFdvcmRQcmVzcykuIEkgZG9u4oCZdCBr
-        bm93IHdoeSBidXQgdGhlIGNvbmZpZyBmaWxlIHdhc27igJl0IGNvcGllZCBp
-        bnRvIHRoZSBjb25maWd1cmF0aW9uIGRpcmVjdG9yecKgLiBZb3UgY2FuIGZp
-        bmQgaXQgYW1vbmcgdGhlIGF2YWlsYWJsZSBtb2RzIGludG/CoC5cblBIUC1G
-        UE0gdXNlcyBhIHN0YW5kYXJkIGNvbmZpZ3VyYXRpb24gcGxhY2VkIGludG8g
-        LiBJdCBsaXN0ZW4gb24gMTI3LjAuMC4xOjkwMDAgb3IgdW5peCBzb2NrZXQg
-        aW4gKEkgYXNzdW1lIHRoZSBjb25maWd1cmVkIG5hbWUgd2FzIOKAnGV4YW1w
-        bGXigJ0pLlxuTWVtY2FjaGVkIHNob3VsZCBiZSBjb25maWd1cmVkIHRvIGJl
-        IHVzZWQgZm9yIHNlc3Npb24gc2hhcmluZyBhbW9uZyBtdWx0aXBsZSBzZXJ2
-        ZXJzLiBUbyBhY3RpdmF0ZcKgaXQgeW91IG5lZWQgdG8gZWRpdCB0aGUgY29u
-        ZmlndXJhdGlvbiBmaWxlIHNldHRpbmcgdGhlIGZvbGxvd2luZyBwYXJhbWV0
-        ZXJzIGludG9cbm5naW54IGNvbmZpZ3VyYXRpb24gaXMgcGxhY2VkIGludG8g
-        YW5kIGxpbmtlZCBpbnRvIGFzIHVzdWFsIGFuZCBmb3J3YXJkIHJlcXVlc3Qg
-        dG8gUEhQLUZQTSBmb3IgUEhQIGZpbGVzLlxuUm9vdCBkaXJlY3Rvcnkgd2ls
-        bCBiZSBvZiBCZWRyb2NrIHByZWZpeGVkIHdpdGggdG8gc3VwcG9ydCB0aGUg
-        Y2FwaXN0cmFubyBkaXJlY3Rvcnkgc3RydWN0dXJlIGRpc3BsYXllZCBiZWxv
-        dy5cbknigJltIHF1aXRlIGZhbWlsaWFyIHdpdGggY2FwaXN0cmFubyBiZWNh
-        dXNlIG9mIG15IFJ1YnkgcmVjZW50IGJhY2tncm91bmQuIFlvdSBuZWVkIGEg
-        UnVieSB2ZXJzaW9uIGdyZWF0ZXIgdGhlbiAxLjkuMyB0byBydW4gaXQgKFJW
-        TSBoZWxwcykuIEZpcnN0IHN0ZXAgaXMgdG8gZG93bmxvYWQgZGVwZW5kZW5j
-        aWVzLiBSdWJ5IHVzZXMgQnVuZGxlci5cbkJ1bmRsZXIgcmVhZCB0aGUgKGFu
-        ZCApIGFuZCBkb3dubG9hZCBhbGwgdGhlIHJlcXVpcmVkIGdlbXMgKFJ1Ynkg
-        bGlicmFyaWVzKS5cbk5vdyB0aGUgdGVjaG5vbG9naWNhbCBzdGFjayBpcyBy
-        ZWFkeSBsb2NhbGx5IGFuZCBvbiBzZXJ2ZXIgSeKAmWxsIHByb2JhYmx5IGRl
-        c2NyaWJlIGhvdyB0byBydW4gYSBMRU1QIHN0YWNrIG9uIE9TIFggaW4gYSBu
-        ZXh0IHBvc3QuIEZvciB0aGUgbW9tZW50IEnigJltIGFzc3VtaW5nIHlvdSBh
-        cmUgYWJsZSB0byBydW4gaXQgbG9jYWxseS4gSGVyZSBpcyB1c2VmdWwgZ3Vp
-        ZGVzIGJ5wqBKb25hcyBGcmllZG1hbm4gYW5kIHJ0Q2FtcC5cbkFueXdheSBC
-        ZWRyb2NrIGNvdWxkIHJ1biBvdmVyIGFueSBMQU1QL0xFTVAgc3RhY2suIFRo
-        ZSBvbmx5IOKAnHNwZWNpYWzigJ0gZmVhdHVyZSBpcyB0aGUgQ29tcG9zZXIg
-        aW50ZWdyYXRpb24uIENvbXBvc2VyIGZvciBQSFAgaXMgbGlrZSBCdW5kbGVy
-        IGZvciBSdWJ5LiBIZWxwcyBkZXZlbG9wZXJzIHRvIG1hbmFnZSBkZXBlbmRl
-        bmNpZXMgaW4gdGhlIHByb2plY3QuIEhlcmUgaXMgdXNlZCB0byBtYW5hZ2Ug
-        cGx1Z2lucywgdGhlbWVzIGFuZCBXb3JkUHJlc3MgY29yZSB1cGRhdGUuXG5Z
-        b3UgY2FuIHJ1biB0byBpbnN0YWxsIGxpYnJhcmllcy4gSWYgeW91IHVwZGF0
-        ZSBsaWJyYXJpZXMgY29uZmlndXJhdGlvbiBvciB5b3Ugd2FudCB0byBmb3Jj
-        ZSBkb3dubG9hZCBvZiB0aGVtIChtYXliZSBhZnRlciBhIGZyZXNoIGluc3Rh
-        bGwpIHJ1biAuXG5DYXBpc3RyYW5vIGVuYWJsZSB1c2VyIHRvIHNldHVwIGRp
-        ZmZlcmVudCBkZXBsb3kgZW52aXJvbm1lbnQuIEEgZ2xvYmFsIGNvbmZpZ3Vy
-        YXRpb24gaXMgZGVmaW5lZCBhbmQgeW91IG5lZWQgdG8gc3BlY2lmeSBvbmx5
-        IGN1c3RvbSBjb25maWd1cmF0aW9uIGZvciBlYWNoIGVudmlyb25tZW50LiBB
-        biBleGFtcGxlIG9mIDpcbkV2ZXJ5dGhpbmcgZWxzZSBpcyBpbmhlcml0ZWQg
-        ZnJvbSBnbG9iYWwgY29uZmlnIHdoZXJlIGFyZSBkZWZpbmVkIGFsbCB0aGUg
-        b3RoZXIgZGVwbG95IHByb3BlcnRpZXMuIElzIGltcG9ydGFudCB0byBzYXkg
-        dGhhdCBkZXBsb3kgc2NyaXB0IG9mIGNhcGlzdHJhbm8gb24gQmVkcm9jayBv
-        bmx5IGRvd25sb2FkIHNvdXJjZSBjb2RlIGZyb20gR2l0IHJlcG8gYW5kIHJ1
-        biBmb3IgbWFpbiBwcm9qZWN0LiBJZiB5b3UgbmVlZCB0byBydW4gaW4gb24g
-        YW55IHBsdWdpbiB5b3UgbmV3IHRvIGRlZmluZSBhIGN1c3RvbSBjYXBpc3Ry
-        YW5vIHRhc2sgYW5kIHJ1biBpdCBhZnRlciB0aGUgZW5kIG9mIGRlcGxveS4g
-        Rm9yIGluc3RhbmNlIHlvdSBjYW4gYWRkIGluIHRoZSBnbG9iYWwgY29uZmln
-        dXJhdGlvbiB0aGUgZm9sbG93aW5nIGxpbmVzIGluIG9yZGVyIHRvIGluc3Rh
-        bGwgZGVwZW5kZW5jaWVzIG9uIGEgc3BlY2lmaWMgcGx1Z2luOlxuTm93IHlv
-        dSBhcmUgcmVhZHkgdG8gZGVwbG95IHlvdXIgQmVkcm9jayBpbnN0YWxsIG9u
-        IHNlcnZlciEgU2ltcGx5IHJ1biAsIHJlc3RhcnQgUEhQLUZQTSAoKSBhbmQg
-        ZW5qb3kgaXQg8J+YgFxuTWFueSB0aGFua3MgdG8gR2l1c2VwcGUsIGdyZWF0
-        IHN5c2FkbWluIGFuZCBmcmllbmQsIGZvciBzdXBwb3J0IGR1cmluZyBkZXZl
-        bG9wbWVudCBhbmQgZGVwbG95IG9mIHRoaXMgQCNAPyE/QCPCoGFwcGxpY2F0
-        aW9uLiIsInVybCI6Imh0dHA6Ly9ibG9nLmFuZHJlYW1vc3Rvc2kubmFtZSIs
-        InRpbWVzdGFtcCI6IjIwMTUtMDctMTVUMDY6MjE6MzEuMzYyIn0=
+        bkV2ZXJ5IHRpbWUgSSBhdHRlbmQgYSB0ZWNoIGNvbmZlcmVuY2UgSSB1c3Vh
+        bGx5IG1lZXQgaW50ZXJlc3RpbmcgcGVvcGxlIGFuZCBmb3VuZCBuZXcgYXdl
+        c29tZSB0ZWNobm9sb2dpZXMuIEl04oCZcyBncmVhdC4gVGhpcyB5ZWFyIEkg
+        YXR0ZW5kZWQgNCBjb25mZXJlbmNlIGluIGEgcm93ICgzNiB0YWxrcyBpbiAx
+        MCBkYXlzKcKgYW5kIEkgc3RhcnRlZCBhIG5ldyBqb2IgYSBmZXcgZGF5cyBl
+        YXJsaWVyLiBEdXJpbmcgTWF5IDIwMTYgSSBkaXNjb3ZlciBkb3plbnMgb2Yg
+        bmV3IHRlY2hub2xvZ2llcyBhbmQgSeKAmWQgbGlrZSB0byBkbyBteSBwYXJ0
+        IGFuZCDigJxnaXZlIGJhY2sgdG8gdGhlIGNvbW11bml0eeKAnSB0YWxraW5n
+        IGFib3V0IHRoZW0gaW4gYSBzZXJpZXMgb2YgcG9zdHMuXG5IZXJlIGlzIHdo
+        YXQgSSBkaXNjb3ZlcmVkIGF0dGVuZGluZyBKU0RheSAyMDE2IGluIFZlcm9u
+        YS5cblByb2dyZXNzaXZlIFdlYiBBcHBzwqDigJx0YWtlIGFkdmFudGFnZSBv
+        ZiBuZXcgdGVjaG5vbG9naWVzIHRvIGJyaW5nIHRoZSBiZXN0IG9mIG1vYmls
+        ZSBzaXRlcyBhbmQgbmF0aXZlIGFwcGxpY2F0aW9ucyB0byB1c2Vycy4gVGhl
+        eeKAmXJlIHJlbGlhYmxlLCBmYXN0LCBhbmQgZW5nYWdpbmcu4oCdIEdvb2ds
+        ZSBzYXlzLiBUaGV5IGFyZSB3ZWIgYXBwcyB3aXRoIGEgZ3JlYXQgb2ZmbGlu
+        ZSBleHBlcmllbmNlLiBIZXJlIGlzIGEgZ3JlYXQgbGlzdCBvZiBleGFtcGxl
+        cy5cblNlcnZpY2UgV29ya2Vyc8KgYW5kwqBXZWIgV29ya2Vyc8KgYXJlIG1v
+        ZGVybiB3YXkgdG8gcnVuIGJhY2tncm91bmQgc2VydmljZXMgaW4gYnJvd3Nl
+        ciB1c2luZyBKYXZhc2NyaXB0LiBXZWIgV29ya2VycyBoYXMgYmV0dGVyIHN1
+        cHBvcnQsIFNlcnZpY2UgV29ya2VycyBoYXMgYmV0dGVyIGZlYXR1cmVzLlxu
+        UGh5c2ljYWwgV2ViwqBpc8KgYWJvdXQgdGhlIGFiaWxpdHkgb2YgdGhlIGJy
+        b3dzZXIgdG8gaW50ZXJhY3Qgd2l0aCBiZWFjb25zIGFuZCBvdGhlciBleHRl
+        cm5hbCBkZXZpY2VzIHdpdGhvdXQgcmVxdWlyZSBhIG5hdGl2ZSBhcHAuwqBX
+        ZWIgQmx1ZXRvb3RoIEFQScKgZ2l2ZXMgYnJvd3NlcnMgYWdhaW4gbW9yZSBm
+        bGV4aWJpbGl0eSAodGhlIHNwZWFrZXIgZHJvdmUgYSByb2JvdCB1c2luZyBK
+        YXZhc2NyaXB0IGluIGJyb3dzZXIpXG5VcFVwwqBoZWxwcyB5b3UgdG8gbWFr
+        ZSB5b3VyIHByb2dyZXNzaXZlIGFwcCB0byBiZSDigJxPZmZsaW5lIEZpcnN0
+        4oCcLiBUaGUgaWRlYSBpcyB0b8KgbWFrZXMgc3VyZSB5b3VyIHVzZXJzIGNh
+        biBhbHdheXMgYWNjZXNzIHlvdXIgc2l0ZeKAmXMgY29udGVudCwgZXZlbiB3
+        aGVuIHRoZXnigJlyZSBvbiBhIHBsYW5lLCBpbiBhbiBlbGV2YXRvciwgb3Ig
+        MjAsMDAwIGxlYWd1ZXMgdW5kZXIgdGhlIHNlYVxuUmVhY3RpdmUgUHJvZ3Jh
+        bW1pbmcgUGFyYWRpZ23CoGlzIHRyZW5keSBieSBub3cuwqBDeWNsZS5qc8Kg
+        YW5kwqBSZWFjdGl2ZVjCoHRha2VzIE9ic2VydmVyIGFuZCBJdGVyYXRvcnMg
+        b24gZnVuY3Rpb25hbCBwcm9ncmFtbWluZy4gU3BlYWtlcnMgdGFsa3MgYSBs
+        b3QgYWJvdXQgdGhlbS5cblRyYWRpdGlvbmFsIGZyYW1ld29ya3MgYXJlIGdv
+        aW5nIHJlYWN0aXZlIHRoYW5rcyB0byBleHRlbnNpb25zIGxpa2XCoE5ncnhc
+        bk1vZGVsIFZpZXcgSW50ZW50wqBpcyBnb2luZyAocHJvYmFibHkpIHRvIHJl
+        cGxhY2UgcHJldmlvdXMgTVZDLCBNVlAsIE1WVk0sIOKAplxuV2hpbGUgSlNY
+        IGdhaW5zIHRyYWN0aW9uIHRoYW5rcyB0byBSZWFjdC5qcywgb3RoZXIgc29s
+        dXRpb25zLCBsaWtlwqBIeXBlcnNjcmlwdCwgYXJlIHNwcmluZ2luZyB1cC5c
+        bkVsZWN0cm9uLCBOVy5qc8KgYW5kIG1hbnkgb3RoZXIgcGxhdGZvcm1zIG1h
+        a2UgcG9zc2liaWxlIHRvIHVzZSBqYXZhc2NyaXB0IHRvIGJ1aWxkIGNyb3Nz
+        IHBsYXRmb3JtIGFwcHMgbGlrZSBTbGFjayzCoEF0b21hbmQgVmlzdWFsIFN0
+        dWRpbyBDb2RlLlxuQXN5bmNyb25vdXMgcHJvZ3JhbW1pbmcgaXMgaGFyZC4g
+        SmF2YXNjcmlwdCBuZXZlciBtYWtlIGVhc2llciB0byBkbyBpdCBidXQgbm93
+        IHRoaW5ncyBhcmUgZ2V0dGluZyBiZXR0ZXIgYW5kIGJldHRlciB0aGFua3Mg
+        dG8gbWFueSBuZXcgbGlicmFyaWVzLsKgRmx1b3JpbmXCoGNhbiBzaW1wbHkg
+        YmUgdGhvdWdoIG9mIGFzIGFuIGFic3RyYWN0aW9uIG9yIGEgRFNMIGFuZCBp
+        cyBhIHN0cnVjdHVyZSBvZiBjb2RlIGluIHdoaWNoIHlvdSBjYW4gbWFuYWdl
+        IGNvbXBsZXggYXN5bmNocm9ub3VzIGNvZGUgd2l0aCBlYXNlLiBDbyBkbyBh
+        bG1vc3QgdGhlIHNhbWUgdGhpbmcgb24gTm9kZS5qcy5cblRhc2suanPCoHRh
+        a2VzIGNvbmNlcHQgb2YgR2VuZXJhdG9ycyBhbmQgUHJvbWlzZXMgdG8gYW5v
+        dGhlciBsZXZlbCBkZWZpbmluZyB0aGUgY29uY2VwdCBvZiBUYXNrLlxuRVM3
+        IHdpbGwgY2xvc2UgdGhlIGNpcmNsZSB1c2luZyBhc3luYyBhbmQgYXdhaXQg
+        d2l0aCB0aGUgcGxlYXN1cmUgb2YgbmF0aXZlIGltcGxlbWVudGF0aW9uLlxu
+        VGhlIEJsZWVkaW5nIGVkZ2UgdmVyc2lvbiBvZiBDaHJvbWUsIENhbmFyeSwg
+        b2ZmZXJzIHlvdSBzZXZlcmFsIGJlYXV0aWZ1bCBiZXRhIGZlYXR1cmVzIGxp
+        a2XCoGFuIGludGVncmF0ZWQgbGF5b3V0IGVkaXRvciBhYmxlIHRvIGVkaXQg
+        U0FTUyBhbmQgd29ya3Mgd2l0aCBSYWlscyzCoGEgcG93ZXJmdWwgYW5pbWF0
+        aW9uIGluc3BlY3Rpb27CoGFuZCBlbmFibGUgeW91IHRvwqBlbXVsYXRlIG5l
+        dHdvcmsgY29ubmVjdGl2aXR5IGFuZCBzcGVlZC5cbk1vc3Qgb2YgdGhlc2Ug
+        ZmVhdHVyZSBhcmUgYXZhaWxhYmxlIGluc2lkZSBDaHJvbWUgV29ya3NwYWNl
+        cy5cbkFsc28gTm9kZS5qcyBzdHVmZiBjb3VsZCBiZSBkZWJ1Z2dlZCB1c2lu
+        ZyBDaHJvbWUgZW5naW5lIHRoYW5rIHRvwqBJcm9uLW5vZGUuIElmIHlvdSBw
+        cmVmZXIgRmlyZWZveCBlbmdpbmUsIFdlYmtpdCwgbG9vayBhdMKgTm9kZS1p
+        bnNwZWN0b3IuXG5JIGFsc28gZGlzY292ZXLCoE1vZGVybml6csKgYW5kIGhp
+        cyBzdHVubmluZyBuZXcgd2Vic2l0ZSwgQ2FuIEkgVXNlwqB0ZWxscyB5b3Ug
+        aG93IG11Y2ggaXMgYSB0ZWNobm9sb2dpZXMgYXZhaWxhYmxlIG9uIGJyb3dz
+        ZXIswqBaZXJvQ2xpcGJvYXJkwqBhbmTCoENsaXBib2FyZC5qc8KgbWFrZXMg
+        Y29weSBhbmQgcGFzdGUgZWFzaWVyLMKgSGFwaS5qc8KgaXMgYW4gaW50ZXJl
+        c3RpbmcgZnJhbWV3b3JrIGFuZMKgSGlnaGxhbmTCoGEgcG93ZXJmdWwgc3Ry
+        ZWFtIGxpYnJhcnkgZm9yIE5vZGUuanMuIEkgYWxzbyBkaXNjb3ZlcmVkIHRo
+        YXQgSSBjYW4gdXNlwqBXZWJHTCBmb3IgZGF0YSBwcm9jZXNzaW5nwqBpbiBi
+        cm93c2VyLlxuSW4gdGhlIGVuZCBhIGxvdCBvZiBuZXcgZGlzY292ZXJpZXMg
+        YXQgSlNEYXkgMjAxNiDwn5iJIiwidXJsIjoiaHR0cDovL3VzZWZ1bHN0dWZm
+        LmlvLyIsInRpbWVzdGFtcCI6IjIwMTctMDItMTdUMDk6MDA6MzUuNTUyIn0=
     http_version: 
-  recorded_at: Wed, 15 Jul 2015 06:21:34 GMT
+  recorded_at: Fri, 17 Feb 2017 09:00:35 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/li/v1
+    body:
+      encoding: US-ASCII
+      string: text=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre&token=YOUR-TEST-TOKEN
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Feb 2017 09:00:35 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Dl-Request-Id:
+      - ae22319b-07a6-46bf-686c-64647b0cdf97
+      X-Dl-Units:
+      - '0.1'
+      X-Dl-Units-Left:
+      - '950.4'
+      X-Dl-Units-Reset:
+      - '2017-02-18 00:00:00 +0000'
+      X-Uniapi-Cost:
+      - units=0.100
+    body:
+      encoding: US-ASCII
+      string: ! '{"time":1,"detectedLangs":[{"lang":"it","confidence":1.0}],"timestamp":"2017-02-17T09:00:35.911"}'
+    http_version: 
+  recorded_at: Fri, 17 Feb 2017 09:00:35 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/li/v1
+    body:
+      encoding: US-ASCII
+      string: token=%3CYOUR-TEST-TOKEN%3E&url=http%3A%2F%2Fblog.andreamostosi.name
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 17 Feb 2017 09:04:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '145'
+      Connection:
+      - keep-alive
+      X-Dl-Request-Id:
+      - 769c696f-498f-4183-67d0-a6113fa84262
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":true,"status":404,"code":"error.invalidParameter","message":"no
+        such token ''\u003cYOUR-TEST-TOKEN\u003e''","data":{"parameter":"token"}}
+
+'
+    http_version: 
+  recorded_at: Fri, 17 Feb 2017 09:04:56 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/li/v1
+    body:
+      encoding: US-ASCII
+      string: html=%3C%21DOCTYPE+HTML+PUBLIC+%22-%2F%2FIETF%2F%2FDTD+HTML+2.0%2F%2FEN%22%3E%3Chtml%3E%3Chead%3E%3Ctitle%3E403+Forbidden%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ch1%3EForbidden%3C%2Fh1%3E%3Cp%3EYou+don+t+have+permission+to+access+%2Fon+this+server.%3C%2Fp%3E%3Cp%3EAdditionally%2C+a+404+Not+Founderror+was+encountered+while+trying+to+use+an+ErrorDocument+to+handle+the+request.%3C%2Fp%3E%3C%2Fbody%3E%3C%2Fhtml%3E&token=%3CYOUR-TEST-TOKEN%3E
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 17 Feb 2017 09:04:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '145'
+      Connection:
+      - keep-alive
+      X-Dl-Request-Id:
+      - 98905326-9ded-4a2e-7bdc-6a6c692c645f
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":true,"status":404,"code":"error.invalidParameter","message":"no
+        such token ''\u003cYOUR-TEST-TOKEN\u003e''","data":{"parameter":"token"}}
+
+'
+    http_version: 
+  recorded_at: Fri, 17 Feb 2017 09:04:57 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/li/v1
+    body:
+      encoding: US-ASCII
+      string: html_fragment=%3Ch1%3EQuesto+%C3%A8+un+test%3C%2Fh1%3E&token=%3CYOUR-TEST-TOKEN%3E
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 17 Feb 2017 09:04:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '145'
+      Connection:
+      - keep-alive
+      X-Dl-Request-Id:
+      - d44a1f71-dbe4-4685-6268-ffc4b29675f1
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":true,"status":404,"code":"error.invalidParameter","message":"no
+        such token ''\u003cYOUR-TEST-TOKEN\u003e''","data":{"parameter":"token"}}
+
+'
+    http_version: 
+  recorded_at: Fri, 17 Feb 2017 09:04:57 GMT
+- request:
+    method: post
+    uri: https://api.dandelion.eu/datatxt/li/v1
+    body:
+      encoding: US-ASCII
+      string: text=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre&token=%3CYOUR-TEST-TOKEN%3E
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 17 Feb 2017 09:04:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '145'
+      Connection:
+      - keep-alive
+      X-Dl-Request-Id:
+      - 5b1cc3a8-8916-424a-46be-9235553329fa
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":true,"status":404,"code":"error.invalidParameter","message":"no
+        such token ''\u003cYOUR-TEST-TOKEN\u003e''","data":{"parameter":"token"}}
+
+'
+    http_version: 
+  recorded_at: Fri, 17 Feb 2017 09:04:58 GMT
 recorded_with: VCR 2.9.3

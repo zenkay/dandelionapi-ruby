@@ -4,77 +4,43 @@ http_interactions:
     method: post
     uri: https://api.dandelion.eu/datatxt/sim/v1
     body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&text1=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre&text2=Mio+padre+di+spalle+sul+piatto+si+mangia+la+vita+e+poi+sulla+pista+da+ballo+fa+un+valzer+dentro+il+suo+nuovo+vestito"
+      encoding: US-ASCII
+      string: text1=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre&text2=Mio+padre+di+spalle+sul+piatto+si+mangia+la+vita+e+poi+sulla+pista+da+ballo+fa+un+valzer+dentro+il+suo+nuovo+vestito&token=YOUR-TEST-TOKEN
     headers:
       User-Agent:
-      - Faraday v0.9.1
+      - Faraday v0.11.0
       Content-Type:
       - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 17 Feb 2017 09:00:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Date:
-      - Sat, 04 Jul 2015 12:47:25 GMT
-      X-Dl-Request-Id:
-      - ccb8ea27-54c6-496f-5f33-7e78b6b367e9
-      X-Dl-Units:
-      - '3'
-      X-Dl-Units-Left:
-      - '996.9'
-      X-Dl-Units-Reset:
-      - '2015-07-05 00:00:00 +0000'
       Content-Length:
       - '98'
       Connection:
       - keep-alive
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Dl-Request-Id:
+      - 4d5bb66d-311d-4109-651c-73f762453ee9
+      X-Dl-Units:
+      - '3.0'
+      X-Dl-Units-Left:
+      - '950.8'
+      X-Dl-Units-Reset:
+      - '2017-02-18 00:00:00 +0000'
+      X-Uniapi-Cost:
+      - units=3.000
     body:
-      encoding: UTF-8
-      string: '{"time":6,"similarity":0.0,"lang":"it","langConfidence":1.0,"timestamp":"2015-07-04T12:47:25.017"}'
+      encoding: US-ASCII
+      string: ! '{"time":5,"similarity":0.0,"lang":"it","langConfidence":1.0,"timestamp":"2017-02-17T09:00:34.193"}'
     http_version: 
-  recorded_at: Sat, 04 Jul 2015 12:47:25 GMT
-- request:
-    method: post
-    uri: https://api.dandelion.eu/sim/v1
-    body:
-      encoding: UTF-8
-      string: "%24app_id=e0bca290&%24app_key=2294c676b8698383764514cc219fad92&text1=Mio+padre+che+mi+spinge+a+mangiare+e+guai+se+non+finisco+mio+padre+che+vuol+farmi+guidare+mi+frena+con+il+fischio+il+bambino+pi%C3%B9+grande+mi+mena+davanti+a+tutti+gli+altri+lui+che+passa+per+caso+mi+salva+e+mi+condanna+per+sempre&text2=Mio+padre+di+spalle+sul+piatto+si+mangia+la+vita+e+poi+sulla+pista+da+ballo+fa+un+valzer+dentro+il+suo+nuovo+vestito"
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 14 Jul 2015 16:54:16 GMT
-      Content-Length:
-      - '97'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: |
-        {"error":true,"status":404,"code":"error.notFound","message":"API endpoint not found","data":{}}
-    http_version: 
-  recorded_at: Tue, 14 Jul 2015 16:54:15 GMT
+  recorded_at: Fri, 17 Feb 2017 09:00:34 GMT
 recorded_with: VCR 2.9.3
