@@ -24,6 +24,7 @@ Setup configuration parameters
 Dandelionapi.configure do |c|
   c.token = "your-token-for-dandelionapi-account"
   c.endpoint = "https://api.dandelion.eu/"
+  c.path = "datatxt/"
 end
 ```
 
