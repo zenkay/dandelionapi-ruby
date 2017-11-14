@@ -12,6 +12,9 @@ module Dandelionapi
           params = params.merge(
             :token => Dandelionapi.config.token
           )
+          
+          params.each{ |k,v| params[k] = v.join(",") if v.kind_of?(Array) }
+          
           conn = Faraday.new(url: Dandelionapi.config.endpoint) do |faraday|
             faraday.request  :url_encoded
             faraday.adapter  Faraday.default_adapter
