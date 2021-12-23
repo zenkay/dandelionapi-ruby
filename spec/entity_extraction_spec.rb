@@ -15,7 +15,7 @@ describe Dandelionapi::EntityExtraction, vcr: vcr_options do
       # account: Mario Rossi <datatxt@mailinator.com>
       c.token = "YOUR-TEST-TOKEN"
       c.endpoint = "https://api.dandelion.eu/"
-      c.path = "datatxt/"
+      c.path = "datatxt"
     end
   end
   
@@ -43,7 +43,7 @@ describe Dandelionapi::EntityExtraction, vcr: vcr_options do
 
   it "make a request to nex using a blog url" do
     element = Dandelionapi::EntityExtraction::Request.new
-    response = element.analyze(url: "http://blog.andreamostosi.name")
+    response = element.analyze(url: "https://www.cambridgeenglish.org/blog")
     expect(response).not_to be_empty
     expect(response["lang"]).to eq("en")
     expect(response["annotations"]).to be_an_instance_of(Array)

@@ -15,7 +15,7 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
       # account: Mario Rossi <datatxt@mailinator.com>
       c.token = "YOUR-TEST-TOKEN"
       c.endpoint = "https://api.dandelion.eu/"
-      c.path = "datatxt/"
+      c.path = "datatxt"
     end
   end
   
@@ -40,7 +40,7 @@ describe Dandelionapi::SentimentAnalysis, vcr: vcr_options do
 
   it "make a request to sent using a blog url" do
     element = Dandelionapi::SentimentAnalysis::Request.new
-    response = element.analyze(url: "http://blog.andreamostosi.name")
+    response = element.analyze(url: "https://www.cambridgeenglish.org/blog")
     expect(response).not_to be_empty
     expect(response["sentiment"]).not_to be_empty
     expect(response["sentiment"]["score"]).to be >= -1.0

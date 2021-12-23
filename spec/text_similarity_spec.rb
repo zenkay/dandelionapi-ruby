@@ -11,7 +11,7 @@ describe Dandelionapi::TextSimilarity, vcr: vcr_options do
       # account: Mario Rossi <datatxt@mailinator.com>
       c.token = "YOUR-TEST-TOKEN"
       c.endpoint = "https://api.dandelion.eu/"
-      c.path = "datatxt/"
+      c.path = "datatxt"
     end
   end
   

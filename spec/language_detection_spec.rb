@@ -15,7 +15,7 @@ describe Dandelionapi::LanguageDetection, vcr: vcr_options do
       # account: Mario Rossi <Dandelionapi@mailinator.com>
       c.token = "YOUR-TEST-TOKEN"
       c.endpoint = "https://api.dandelion.eu/"
-      c.path = "datatxt/"
+      c.path = "datatxt"
     end
   end
   
@@ -41,7 +41,7 @@ describe Dandelionapi::LanguageDetection, vcr: vcr_options do
 
   it "make a request to li using a blog url" do
     element = Dandelionapi::LanguageDetection::Request.new
-    response = element.analyze(url: "http://blog.andreamostosi.name")
+    response = element.analyze(url: "https://www.cambridgeenglish.org/blog")
     expect(response).not_to be_empty
     expect(response["detectedLangs"]).to be_an_instance_of(Array)
     response["detectedLangs"].each do |a|
