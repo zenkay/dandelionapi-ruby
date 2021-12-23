@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 1.9.3'
 
-  spec.add_dependency "faraday", '~> 0.9', '>= 0.9.0'
-  spec.add_dependency "faraday_middleware", '~> 0.9', '>= 0.9.1'
+  spec.add_dependency "faraday", '~> 1.0', '>= 1.0.0'
+  spec.add_dependency "faraday_middleware", '~> 1.0', '>= 1.0.0'
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.1"

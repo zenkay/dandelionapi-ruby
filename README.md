@@ -24,7 +24,7 @@ Setup configuration parameters
 Dandelionapi.configure do |c|
   c.token = "your-token-for-dandelionapi-account"
   c.endpoint = "https://api.dandelion.eu/"
-  c.path = "datatxt/"
+  c.path = "datatxt"
 end
 ```
 
@@ -43,7 +43,7 @@ response = element.analyze(text: "This is a test")
 
 ```
 element = Dandelionapi::TextSimilarity::Request.new
-response = element.analyze(text1: "This is a test", text2: "This is another test")
+response = element.compare(text1: "This is a test", text2: "This is another test")
 ```
 
 **[Language Detection API](https://dandelion.eu/docs/api/datatxt/li/v1/)**: 
